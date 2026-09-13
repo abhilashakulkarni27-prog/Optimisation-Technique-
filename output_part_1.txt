@@ -1,0 +1,56 @@
+advertisng media selection problm
+problm:
+a company wants to select advertisments from tv, radio,
+newspapr and online media.
+decison variables:
+x1 = number of tv advertismnts
+x2 = number of radio advertisments
+x3 = number of newspapr advertisments
+x4 = number of online advertisments
+objctive function:
+maxmize z = 40x1 + 35x2 + 25x3 + 30x4
+subjet to:
+2x1 + x2 + x3 + 3x4 <= 40
+x1 + 2x2 + 3x3 + x4 >= 30
+x1 + x2 + x3 + x4 = 12
+3x1 + x2 + 2x3 + x4 <= 25
+x1, x2, x3, x4 >= 0
+standerd form
+2x1 + x2 + x3 + 3x4 + s1 = 40
+x1 + 2x2 + 3x3 + x4 - s2 + a1 = 30
+x1 + x2 + x3 + x4 + a2 = 12
+3x1 + x2 + 2x3 + x4 + s3 = 25
+big-m objcetive:
+z = 40x1 + 35x2 + 25x3 + 30x4 - ma1 - ma2
+itration 0
+baisis: ['s1', 'a1', 'a2', 's3']
+cj - zj: [ 2000040.  3000035.  4000025.  2000030.        0. -1000000.        0.
+        0.        0.]
+itration 1
+baisis: ['s1', 'x3', 'a2', 's3']
+cj - zj: [  666698.333   333351.667        0.      666688.333        0.
+   333341.667 -1333341.667        0.           0.   ]
+itration 2
+baisis: ['s1', 'x3', 'a2', 'x1']
+cj - zj: [       0.      428594.286        0.      571445.714        0.
+   142856.429 -1142856.429        0.     -285727.857]
+itration 3
+baisis: ['s1', 'x3', 'x4', 'x1']
+cj - zj: [ 0.00000e+00  1.00000e+01  0.00000e+00  0.00000e+00  0.00000e+00
+ -5.00000e+00 -9.99995e+05 -1.00003e+06 -5.00000e+00]
+itration 4
+baisis: ['s1', 'x3', 'x2', 'x1']
+cj - zj: [ 0.00000000e+00  0.00000000e+00  0.00000000e+00 -1.33330000e+01
+  0.00000000e+00 -8.33300000e+00 -9.99991667e+05 -1.00005333e+06
+  1.66700000e+00]
+itration 5
+baisis: ['s1', 'x3', 'x2', 's3']
+cj - zj: [-5.000000e+00  0.000000e+00  0.000000e+00 -1.500000e+01  0.000000e+00
+ -1.000000e+01 -9.999900e+05 -1.000055e+06  0.000000e+00]
+fianl result
+optiaml solution:
+x1 = 0.0
+x2 = 6.0
+x3 = 6.0
+x4 = 0.0
+maxmum z = 360.0

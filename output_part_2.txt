@@ -1,0 +1,37 @@
+ambulance transportation problem
+problem:
+a city has 3 ambulance stations and 4 hospitals.
+the available ambulance trips at the stations are 20, 30 and 25.
+the required ambulance trips at the hospitals are 10, 20, 25 and 20.
+decision variables:
+xij = number of ambulance trips sent from station i to hospital j
+transportation cost matrix:
+             h1   h2   h3   h4
+station 1     [ 8.  6. 10.  9.]
+station 2     [9. 7. 4. 2.]
+station 3     [3. 5. 6. 4.]
+objective function:
+minimize z =  8x11+ 6x12 +10x13 +  9x14 + 9x21 +7x22 + 4x23+  2x24 + 3x31 + 5x32+6x33 +  4x34
+subject to:
+x11+ x12 +  x13 + x14 =20
+x21 +  x22 + x23+ x24  = 30
+x31 + x32+  x33 +x34 =  25
+x11 +x21 + x31= 10
+x12+  x22 + x32 =  20
+x13 + x23+  x33=25
+x14+ x24 + x34  = 20
+xij >=0
+initial basic feasible solution using vam:
+             h1   h2   h3   h4
+station 1 [ 0 20  0  0]
+station 2 [ 0  0 10 20]
+station 3 [10  0 15  0]
+initial transportation cost =  320
+optimal solution using modi:
+             h1   h2   h3   h4
+station 1 [ 0 20  0  0]
+station 2 [ 0  0 10 20]
+station 3 [10  0 15  0]
+minimum transportation cost =  320
+multiple optimal solutions exist.
+the above allocation gives the minimum transportation cost.
